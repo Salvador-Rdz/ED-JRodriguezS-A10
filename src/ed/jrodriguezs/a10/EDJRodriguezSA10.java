@@ -24,6 +24,9 @@ public class EDJRodriguezSA10 {
         list.deleteNode(2);
         list.showList();
         list.showListbyAddress();
+        list.deleteList();
+        list.showList();
+        list.showListbyAddress();
         
     }
     

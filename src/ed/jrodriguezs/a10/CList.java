@@ -67,6 +67,12 @@ public class  CList <T>
         if(!isEmpty())
         {
             pointer = pivot;
+            while(!isEmpty())
+            {
+                pointer = pointer.next;
+                length--;
+            }
+            pointer.next = null;
         }
         pointer = null;
     }
