@@ -59,19 +59,55 @@ public class  CList <T>
                 pointer = null;
                 i = length+1;
             }
-            pointer = pointer.next;
         }
+        pointer = null;
     }
     void deleteList()
     {
-        
+        if(!isEmpty())
+        {
+            pointer = pivot;
+        }
+        pointer = null;
     }
     void showList()
     {
-        
+        if(!isEmpty())
+        {
+            System.out.print("start->");
+            pointer = pivot;
+            for(int i=0;i<length;i++)
+            {
+                System.out.print("["+pointer.data+"]");
+                pointer = pointer.next;
+            }
+            System.out.print("<-end");
+            System.out.println("");
+        }
+        else
+        {
+            System.out.println("The list is empty!");
+        }
+        pointer = null;
     }
     void showListbyAddress()
     {
-        
+        if(!isEmpty())
+        {
+            System.out.print("start->");
+            pointer = pivot;
+            for(int i=1;i<=length;i++)
+            {
+                System.out.print("["+pointer+"]");
+                pointer = pointer.next;
+            }
+            System.out.print("<-end");
+            System.out.println("");
+        }
+        else
+        {
+            System.out.println("The list is empty!");
+        }
+        pointer = null;
     }
 }

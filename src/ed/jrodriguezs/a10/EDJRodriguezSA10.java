@@ -16,6 +16,15 @@ public class EDJRodriguezSA10 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        CList list = new CList(1);
+        list.insert(2);
+        list.insert(3);
+        list.showList();
+        list.showListbyAddress();
+        list.deleteNode(2);
+        list.showList();
+        list.showListbyAddress();
+        
     }
     
 }
